@@ -1,38 +1,46 @@
-
-# 📘 Assignment: Games in Python
+# 📘 Assignment: Jogo da Forca
 
 ## 🎯 Objective
 
-Build a simple but complete word game in Python using strings, loops, conditionals, and user input. The goal is to practice logic and interaction while creating a playable game for the terminal.
+Crie um jogo da Forca em Python para praticar manipulação de strings, uso de listas, laços de repetição e tomada de decisões com base na entrada do usuário.
 
 ## 📝 Tasks
 
-### 🛠️ Build the Hangman Game
+### 🛠️ Seleção da Palavra
 
 #### Descrição
-Create a classic hangman game where the player tries to guess the hidden word one letter at a time. The game should keep track of correct and incorrect guesses and end when the word is guessed or the player runs out of attempts.
+Crie uma lista com palavras predefinidas e escolha uma delas aleatoriamente para iniciar o jogo.
 
 #### Requisitos
 O programa concluído deve:
 
-- Selecionar uma palavra aleatória de uma lista predefinida
-- Mostrar a palavra escondida com espaços ou underscores para as letras ainda não reveladas
-- Permitir que o usuário insira uma letra por vez
-- Atualizar o estado do jogo após cada tentativa
-- Contar o número de tentativas restantes
-- Exibir mensagens de vitória e derrota no final
-- Validar entradas inválidas, como letras repetidas ou valores que não são letras
+- Armazenar pelo menos 5 palavras em uma lista.
+- Selecionar uma palavra aleatória para o jogo.
+- Converter a palavra para um formato de progresso visível, como `_ _ _ _`.
 
-### 🛠️ Add a Better User Experience
+### 🛠️ Adivinhando Letras
 
 #### Descrição
-Improve the gameplay by adding small details that make the game more complete and easier to use. This task focuses on polish, feedback, and better flow during play.
+Permita que o jogador insira letras e atualize o estado da palavra escondida conforme as respostas forem corretas ou incorretas.
 
 #### Requisitos
 O programa concluído deve:
 
-- Exibir uma mensagem inicial clara ao iniciar o jogo
-- Mostrar o progresso atual da palavra e as letras já tentadas
-- Permitir reiniciar uma nova partida após o término da rodada
-- Usar mensagens amigáveis e informativas durante o jogo
-- Organizar o código em pequenas partes, como funções para iniciar, validar entrada e verificar vitória
+- Solicitar uma letra ao usuário com `input()`.
+- Verificar se a letra está presente na palavra secreta.
+- Mostrar o progresso atual da palavra após cada tentativa.
+- Informar quando a letra for repetida ou inválida.
+
+### 🛠️ Controle de Tentativas e Fim de Jogo
+
+#### Descrição
+Implemente a lógica para contar erros, encerrar o jogo ao final e exibir mensagens de vitória ou derrota.
+
+#### Requisitos
+O programa concluído deve:
+
+- Acompanhar a quantidade de vidas ou tentativas restantes.
+- Diminuir o contador quando a letra for incorreta.
+- Encerrar o jogo quando a palavra for completamente revelada.
+- Encerrar o jogo quando o jogador exceder o número máximo de erros.
+- Exibir uma mensagem final clara para vitória ou derrota.
